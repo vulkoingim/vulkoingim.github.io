@@ -6,9 +6,19 @@
     <description>Recent content on Aleksandar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 05 Jan 2020 20:38:09 +0000</lastBuildDate>
     
 	<atom:link href="https://vulko.ingim.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://vulko.ingim.io/about/</link>
+      <pubDate>Sun, 05 Jan 2020 20:38:09 +0000</pubDate>
+      
+      <guid>https://vulko.ingim.io/about/</guid>
+      <description>Blabla</description>
+    </item>
     
   </channel>
 </rss>
