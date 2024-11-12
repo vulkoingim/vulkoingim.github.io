@@ -6,8 +6,15 @@
     <description>Recent content on Aleksandar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Dec 2023 12:28:48 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Nov 2024 17:11:27 +0000</lastBuildDate>
     <atom:link href="https://vulkoingim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Obsidian Read It Later</title>
+      <link>https://vulkoingim.github.io/posts/obsidian-read-it-later/</link>
+      <pubDate>Tue, 12 Nov 2024 17:11:27 +0000</pubDate>
+      <guid>https://vulkoingim.github.io/posts/obsidian-read-it-later/</guid>
+      <description>I&amp;rsquo;ve always been hoarding hundreds of tabs in my browser, thinking that I&amp;rsquo;ll eventually get back to that article and read it at some point in the future. At some point I discovered read-it-later apps - like Pocket and started hoarding links there instead as well. For some unknown reason I&amp;rsquo;ve always aspired to read those things I&amp;rsquo;ve saved at some later date&amp;hellip;&#xA;It very rarely happened.&#xA;Some time passed and I decided that I&amp;rsquo;ll cut my losses and start fresh, and I started using Omnivore - with mixed results.</description>
+    </item>
     <item>
       <title>yubikey/touch id sudo on osx</title>
       <link>https://vulkoingim.github.io/posts/yubi-touch-sudo/</link>

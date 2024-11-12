@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Obsidian Read It Later - Aleksandar&#39;s Blog</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Obsidian Read It Later" />
+<meta property="og:description" content="I&rsquo;ve always been hoarding hundreds of tabs in my browser, thinking that I&rsquo;ll eventually get back to that article and read it at some point in the future. At some point I discovered read-it-later apps - like Pocket and started hoarding links there instead as well. For some unknown reason I&rsquo;ve always aspired to read those things I&rsquo;ve saved at some later date&hellip;
+It very rarely happened.
+Some time passed and I decided that I&rsquo;ll cut my losses and start fresh, and I started using Omnivore - with mixed results." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://vulkoingim.github.io/posts/obsidian-read-it-later/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-11-12T17:11:27+00:00" />
+<meta property="article:modified_time" content="2024-11-12T17:11:27+00:00" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Obsidian Read It Later"/>
+<meta name="twitter:description" content="I&rsquo;ve always been hoarding hundreds of tabs in my browser, thinking that I&rsquo;ll eventually get back to that article and read it at some point in the future. At some point I discovered read-it-later apps - like Pocket and started hoarding links there instead as well. For some unknown reason I&rsquo;ve always aspired to read those things I&rsquo;ve saved at some later date&hellip;
+It very rarely happened.
+Some time passed and I decided that I&rsquo;ll cut my losses and start fresh, and I started using Omnivore - with mixed results."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://vulkoingim.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://vulkoingim.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://vulkoingim.github.io/css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="https://vulkoingim.github.io/css/dark.css" media="(prefers-color-scheme: dark)" />
+	<link rel="stylesheet" type="text/css" href="https://vulkoingim.github.io/css/custom-dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="https://vulkoingim.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<base href="https://vulkoingim.github.io/">
+	<h1 class="site-title"><a href="https://vulkoingim.github.io/">Aleksandar&#39;s Blog</a></h1>
+	<div class="site-description"><h2>Random ramblings</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/vulkoingim" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/vulkoingim" title="Twitter"><i data-feather="twitter"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about/">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Obsidian Read It Later</h1>
+			<div class="meta">Posted at &mdash; Nov 12, 2024</div>
+		</div>
+
+		<div class="markdown">
+			<p>I&rsquo;ve always been hoarding hundreds of tabs in my browser, thinking that I&rsquo;ll eventually get back to that article and read it at some point in the future. At some point I discovered read-it-later apps - like <code>Pocket</code> and started hoarding links there <del>instead</del> as well. For some unknown reason I&rsquo;ve always aspired to read those things I&rsquo;ve saved at some later date&hellip;</p>
+<p>It very rarely happened.</p>
+<p>Some time passed and I decided that I&rsquo;ll cut my losses and start fresh, and I started using <code>Omnivore</code> - with mixed results. Well, recently it was announced it was <a href="https://blog.omnivore.app/p/details-on-omnivore-shutting-down">shutting down</a>, so my initial reaction was to look for yet another alternative. Surprise surprise.</p>
+<p>Then I thought that none of those read-it-later apps really work for me and I should try something else.</p>
+<p>I&rsquo;ve also been using Obsidian a lot lately, and have been keeping a daily journal. I decided to try to keep track of interesting links in my journal. At first I manually copied links and pasted them in my daily note, but eventually (after the 2nd time I pasted a link) I got tired of this and decided to automate it.</p>
+<p>Thanks to the great <a href="https://publish.obsidian.md/advanced-uri-doc/Home">Advanced URI</a> plugin - that&rsquo;s quite easy. I can create a bookmarklet with some simple <code>js</code> which would grab the page title &amp; url, and construct an <code>obsidian://</code> link. Clicking on the bookmarklet - it would open that link, which would append the title/url under a heading in my daily journal. As you can see from the format - it would add it as a checkboxed list.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>javascript<span style="color:#719e07">:</span>(<span style="color:#268bd2">function</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#268bd2">const</span> pageTitle <span style="color:#719e07">=</span> <span style="color:#b58900">document</span>.title;
+</span></span><span style="display:flex;"><span>    <span style="color:#268bd2">const</span> pageUrl <span style="color:#719e07">=</span> <span style="color:#b58900">window</span>.location.href;
+</span></span><span style="display:flex;"><span>    <span style="color:#268bd2">const</span> markdownLink <span style="color:#719e07">=</span> <span style="color:#586e75">`* [ ] [</span><span style="color:#2aa198">${</span>pageTitle<span style="color:#2aa198">}</span><span style="color:#586e75">](</span><span style="color:#2aa198">${</span>pageUrl<span style="color:#2aa198">}</span><span style="color:#586e75">)`</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#268bd2">const</span> obsidianUri <span style="color:#719e07">=</span> <span style="color:#586e75">`obsidian://advanced-uri?vault=</span><span style="color:#2aa198">${</span><span style="color:#b58900">encodeURIComponent</span>(<span style="color:#2aa198">&#39;Obsidian&#39;</span>)<span style="color:#2aa198">}</span><span style="color:#586e75">&amp;daily=true&amp;heading=Links&amp;data=</span><span style="color:#2aa198">${</span><span style="color:#b58900">encodeURIComponent</span>(markdownLink)<span style="color:#2aa198">}</span><span style="color:#586e75">&amp;mode=append`</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#b58900">window</span>.location.href <span style="color:#719e07">=</span> obsidianUri;
+</span></span><span style="display:flex;"><span>})();
+</span></span></code></pre></div><p>This works splendidly - with the &ldquo;small&rdquo; annoyance that it asks for permission on every page. It&rsquo;s only a small annoyance the first few times, and after a couple of clicks I got majorly annoyed so I created a very basic Firefox add-on that will do the same, but will no longer ask me for permissions on every page/click.</p>
+<p>You can find the source code <a href="https://github.com/vulkoingim/ff-obsidian-quick-link">here</a>, or the <a href="https://addons.mozilla.org/en-US/firefox/addon/obsidian-quick-link/">add-on on mozilla.org</a>.</p>
+<p>So back to the read-it-later situation - has anything changed? Do I actually open any of those links again? So far I would say that it might be a small improvement over what I had before. I interact with my daily note multiple times a day - so it&rsquo;s a bit of an eyesore (if nothing else) looking at a very long list of random links. Additionally I can reference relevant links with other notes.</p>
+<p>But I think the best feature so far is that I only roll-over the last 15 (unchecked) links of my daily note to the next day, which controls the clutter and &ldquo;forces&rdquo; me not to have an endless list.</p>
+<p>Here is how I use that add-on with my daily note:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#586e75"># Links</span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">&lt;%*</span>
+</span></span><span style="display:flex;"><span>async function getUncheckedLinks() {
+</span></span><span style="display:flex;"><span>    <span style="color:#719e07">const</span> { folder, format } <span style="color:#719e07">=</span> app<span style="color:#719e07">.</span>plugins<span style="color:#719e07">.</span>getPlugin(<span style="color:#2aa198">&#34;periodic-notes&#34;</span>)<span style="color:#719e07">.</span>settings<span style="color:#719e07">.</span>daily;
+</span></span><span style="display:flex;"><span>    <span style="color:#719e07">const</span> pathFormat <span style="color:#719e07">=</span> `[<span style="color:#719e07">$</span>{folder}]<span style="color:#719e07">/$</span>{format}`;
+</span></span><span style="display:flex;"><span>    <span style="color:#719e07">const</span> titleFormat <span style="color:#719e07">=</span> format<span style="color:#719e07">.</span>split(<span style="color:#2aa198">&#34;/&#34;</span>)<span style="color:#719e07">.</span>at(<span style="color:#719e07">-</span><span style="color:#2aa198">1</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#719e07">const</span> now <span style="color:#719e07">=</span> moment(tp<span style="color:#719e07">.</span>file<span style="color:#719e07">.</span>path(<span style="color:#268bd2">true</span>), pathFormat);
+</span></span><span style="display:flex;"><span>	<span style="color:#719e07">const</span> previousDayLink <span style="color:#719e07">=</span> `[[<span style="color:#719e07">$</span>{now<span style="color:#719e07">.</span>clone()<span style="color:#719e07">.</span>subtract(<span style="color:#2aa198">1</span>, <span style="color:#2aa198">&#39;d&#39;</span>)<span style="color:#719e07">.</span>format(pathFormat)}]]`;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#719e07">const</span> fileExists <span style="color:#719e07">=</span> await tp<span style="color:#719e07">.</span>file<span style="color:#719e07">.</span>exists(previousDayLink);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    try {
+</span></span><span style="display:flex;"><span>        <span style="color:#719e07">const</span> fileContent <span style="color:#719e07">=</span> await tp<span style="color:#719e07">.</span>file<span style="color:#719e07">.</span>include(previousDayLink);
+</span></span><span style="display:flex;"><span>        <span style="color:#719e07">const</span> lines <span style="color:#719e07">=</span> fileContent<span style="color:#719e07">.</span>split(<span style="color:#2aa198">&#39;</span><span style="color:#cb4b16">\n</span><span style="color:#2aa198">&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#719e07">//</span> Filter <span style="color:#719e07">for</span> unchecked links under the <span style="color:#586e75"># Links heading</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#719e07">const</span> uncheckedLinks <span style="color:#719e07">=</span> [];
+</span></span><span style="display:flex;"><span>        let inLinksSection <span style="color:#719e07">=</span> <span style="color:#268bd2">false</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        lines<span style="color:#719e07">.</span>forEach(line <span style="color:#719e07">=&gt;</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#719e07">if</span> (line<span style="color:#719e07">.</span>trim() <span style="color:#719e07">===</span> <span style="color:#2aa198">&#34;# Links&#34;</span>) {
+</span></span><span style="display:flex;"><span>                inLinksSection <span style="color:#719e07">=</span> <span style="color:#268bd2">true</span>; <span style="color:#719e07">//</span> Start processing under <span style="color:#586e75"># Links</span>
+</span></span><span style="display:flex;"><span>            } <span style="color:#719e07">else</span> <span style="color:#719e07">if</span> (line<span style="color:#719e07">.</span>startsWith(<span style="color:#2aa198">&#34;#&#34;</span>) <span style="color:#719e07">&amp;&amp;</span> inLinksSection) {
+</span></span><span style="display:flex;"><span>                inLinksSection <span style="color:#719e07">=</span> <span style="color:#268bd2">false</span>; <span style="color:#719e07">//</span> Stop <span style="color:#719e07">if</span> another heading is found
+</span></span><span style="display:flex;"><span>            } <span style="color:#719e07">else</span> <span style="color:#719e07">if</span> (inLinksSection <span style="color:#719e07">&amp;&amp;</span> line<span style="color:#719e07">.</span>trim()<span style="color:#719e07">.</span>startsWith(<span style="color:#2aa198">&#34;* [ ]&#34;</span>)) {
+</span></span><span style="display:flex;"><span>                uncheckedLinks<span style="color:#719e07">.</span>push(line); <span style="color:#719e07">//</span> Collect only unchecked items
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#719e07">return</span> uncheckedLinks<span style="color:#719e07">.</span>length <span style="color:#719e07">&gt;</span> <span style="color:#2aa198">0</span> ? uncheckedLinks<span style="color:#719e07">.</span>slice(<span style="color:#2aa198">1</span>)<span style="color:#719e07">.</span>slice(<span style="color:#719e07">-</span><span style="color:#2aa198">15</span>)<span style="color:#719e07">.</span>join(<span style="color:#2aa198">&#34;</span><span style="color:#cb4b16">\n</span><span style="color:#2aa198">&#34;</span>) : <span style="color:#2aa198">&#34;* No unchecked links found.&#34;</span>;
+</span></span><span style="display:flex;"><span>    } catch (error) {
+</span></span><span style="display:flex;"><span>        console<span style="color:#719e07">.</span>error(`Failed to read file <span style="color:#719e07">$</span>{previousDayLink}: <span style="color:#719e07">$</span>{error}`);
+</span></span><span style="display:flex;"><span>        <span style="color:#719e07">return</span> <span style="color:#2aa198">&#34;* Error reading previous note.&#34;</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">-%&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">&lt;%</span> await getUncheckedLinks() <span style="color:#719e07">%&gt;</span>
+</span></span></code></pre></div><p>Is it perfect? No.</p>
+<p>Does this workflow work for you? I have no idea.</p>
+<p>Am I going to continue using it? Absolutely no clue.</p>
+<p>Why are you doing this? Beats me, I&rsquo;ve been trying to write a bit lately (as you can gather from the mention of my daily journal) and decided to write this blog post as well.</p>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div>
+		</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script>feather.replace()</script>
+</body>
+</html>
