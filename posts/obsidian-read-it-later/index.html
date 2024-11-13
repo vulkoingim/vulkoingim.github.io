@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Obsidian Read It Later - Aleksandar&#39;s Blog</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:title" content="Obsidian Read It Later" />
-<meta property="og:description" content="I&rsquo;ve always been hoarding hundreds of tabs in my browser, thinking that I&rsquo;ll eventually get back to that article and read it at some point in the future. At some point I discovered read-it-later apps - like Pocket and started hoarding links there instead as well. For some unknown reason I&rsquo;ve always aspired to read those things I&rsquo;ve saved at some later date&hellip;
+<meta property="og:description" content="I&rsquo;ve always been hoarding hundreds of tabs in my browser, thinking that I&rsquo;ll eventually get back to that article and read it at some point in the future. At some point I discovered read-it-later apps - like Pocket and started hoarding things there instead as well. For some unknown reason I&rsquo;ve always aspired to read those things I&rsquo;ve saved at some later date&hellip;
 It very rarely happened.
 Some time passed and I decided that I&rsquo;ll cut my losses and start fresh, and I started using Omnivore - with mixed results." />
 <meta property="og:type" content="article" />
@@ -13,7 +13,7 @@ Some time passed and I decided that I&rsquo;ll cut my losses and start fresh, an
 <meta property="article:modified_time" content="2024-11-12T17:11:27+00:00" />
 
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Obsidian Read It Later"/>
-<meta name="twitter:description" content="I&rsquo;ve always been hoarding hundreds of tabs in my browser, thinking that I&rsquo;ll eventually get back to that article and read it at some point in the future. At some point I discovered read-it-later apps - like Pocket and started hoarding links there instead as well. For some unknown reason I&rsquo;ve always aspired to read those things I&rsquo;ve saved at some later date&hellip;
+<meta name="twitter:description" content="I&rsquo;ve always been hoarding hundreds of tabs in my browser, thinking that I&rsquo;ll eventually get back to that article and read it at some point in the future. At some point I discovered read-it-later apps - like Pocket and started hoarding things there instead as well. For some unknown reason I&rsquo;ve always aspired to read those things I&rsquo;ve saved at some later date&hellip;
 It very rarely happened.
 Some time passed and I decided that I&rsquo;ll cut my losses and start fresh, and I started using Omnivore - with mixed results."/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
@@ -68,12 +68,12 @@ Some time passed and I decided that I&rsquo;ll cut my losses and start fresh, an
 		</div>
 
 		<div class="markdown">
-			<p>I&rsquo;ve always been hoarding hundreds of tabs in my browser, thinking that I&rsquo;ll eventually get back to that article and read it at some point in the future. At some point I discovered read-it-later apps - like <code>Pocket</code> and started hoarding links there <del>instead</del> as well. For some unknown reason I&rsquo;ve always aspired to read those things I&rsquo;ve saved at some later date&hellip;</p>
+			<p>I&rsquo;ve always been hoarding hundreds of tabs in my browser, thinking that I&rsquo;ll eventually get back to that article and read it at some point in the future. At some point I discovered read-it-later apps - like <code>Pocket</code> and started hoarding things there <del>instead</del> as well. For some unknown reason I&rsquo;ve always aspired to read those things I&rsquo;ve saved at some later date&hellip;</p>
 <p>It very rarely happened.</p>
 <p>Some time passed and I decided that I&rsquo;ll cut my losses and start fresh, and I started using <code>Omnivore</code> - with mixed results. Well, recently it was announced it was <a href="https://blog.omnivore.app/p/details-on-omnivore-shutting-down">shutting down</a>, so my initial reaction was to look for yet another alternative. Surprise surprise.</p>
 <p>Then I thought that none of those read-it-later apps really work for me and I should try something else.</p>
-<p>I&rsquo;ve also been using Obsidian a lot lately, and have been keeping a daily journal. I decided to try to keep track of interesting links in my journal. At first I manually copied links and pasted them in my daily note, but eventually (after the 2nd time I pasted a link) I got tired of this and decided to automate it.</p>
-<p>Thanks to the great <a href="https://publish.obsidian.md/advanced-uri-doc/Home">Advanced URI</a> plugin - that&rsquo;s quite easy. I can create a bookmarklet with some simple <code>js</code> which would grab the page title &amp; url, and construct an <code>obsidian://</code> link. Clicking on the bookmarklet - it would open that link, which would append the title/url under a heading in my daily journal. As you can see from the format - it would add it as a checkboxed list.</p>
+<p>I&rsquo;ve also been using Obsidian a lot lately, and have been keeping a daily journal. I decided to try to keep track of things I would like to get back to in my journal. At first I manually copied links and pasted them in my daily note, but eventually (after the 2nd time) I got tired of this and decided to automate it.</p>
+<p>Thanks to the great <a href="https://publish.obsidian.md/advanced-uri-doc/Home">Advanced URI</a> plugin - that&rsquo;s quite easy. I can create a bookmarklet with some simple <code>js</code> which would grab the page title &amp; url, and construct an <code>obsidian://</code> link. Clicking on the bookmarklet - it would open that link, which would append the title/url under a heading in my daily journal.</p>
 <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>javascript<span style="color:#719e07">:</span>(<span style="color:#268bd2">function</span>() {
 </span></span><span style="display:flex;"><span>    <span style="color:#268bd2">const</span> pageTitle <span style="color:#719e07">=</span> <span style="color:#b58900">document</span>.title;
 </span></span><span style="display:flex;"><span>    <span style="color:#268bd2">const</span> pageUrl <span style="color:#719e07">=</span> <span style="color:#b58900">window</span>.location.href;
@@ -129,7 +129,6 @@ Some time passed and I decided that I&rsquo;ll cut my losses and start fresh, an
 </span></span></code></pre></div><p>Is it perfect? No.</p>
 <p>Does this workflow work for you? I have no idea.</p>
 <p>Am I going to continue using it? Absolutely no clue.</p>
-<p>Why are you doing this? Beats me, I&rsquo;ve been trying to write a bit lately (as you can gather from the mention of my daily journal) and decided to write this blog post as well.</p>
 
 		</div>
 
