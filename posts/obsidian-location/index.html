@@ -89,6 +89,7 @@
 <li>Run after I turn airplay mode off
 <img src="/images/automation.png" alt="automation"></li>
 </ul>
+<p>Also I can trigger the shortcut manually whenever I want in order to update my location.</p>
 <p>Then, using <code>Templater</code> I can grab that information wherever I want, e.g. in my Daily notes and also get weather information based on my location.</p>
 <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#719e07">&lt;%-</span>
 </span></span><span style="display:flex;"><span><span style="color:#268bd2">async</span> <span style="color:#268bd2">function</span> getPageProperties(pageName) {
@@ -109,7 +110,11 @@
 </span></span><span style="display:flex;"><span>location<span style="color:#719e07">:</span> <span style="color:#2aa198">&#34;&lt;% latitude %&gt;,&lt;% longitude %&gt;&#34;</span>
 </span></span><span style="display:flex;"><span>city<span style="color:#719e07">:</span> <span style="color:#719e07">&lt;%</span> city <span style="color:#719e07">%&gt;</span>, <span style="color:#719e07">&lt;%</span> country <span style="color:#719e07">%&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#719e07">---</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><p>I use my phone as the source of my location, as it&rsquo;s always on and I always have it with me. But you can also automate the Shortcut on a Mac.
+You can do it through a <a href="https://medium.com/@richardmoult75/how-to-schedule-macos-shortcuts-96774f6972ac">calendar event</a>, as described in the article. Or if you want you can also run it through <code>cron</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>0 7 * * * shortcuts run &#34;Obsidian Location&#34;
+</span></span></code></pre></div><p>Probably there are some other tools out there as well that can help you do that, but I haven&rsquo;t really looked into them. I think either of those options should satisfy most use cases. The only caveat here is that your mac will have to be on for the scheduled event to work.</p>
+
 		</div>
 
 		<div class="post-tags">
