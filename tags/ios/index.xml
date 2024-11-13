@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ios on Aleksandar&#39;s Blog</title>
+    <link>https://vulkoingim.github.io/tags/ios/</link>
+    <description>Recent content in ios on Aleksandar&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Nov 2024 14:01:52 +0000</lastBuildDate>
+    <atom:link href="https://vulkoingim.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Obsidian Location</title>
+      <link>https://vulkoingim.github.io/posts/obsidian-location/</link>
+      <pubDate>Wed, 13 Nov 2024 14:01:52 +0000</pubDate>
+      <guid>https://vulkoingim.github.io/posts/obsidian-location/</guid>
+      <description>Recently I started using Obsidian and journaling daily. It took no time for me to start tracking all kinds of things for each day, and naturally some of those things ended up being my location and the weather.&#xA;It turns out that getting your accurate location in Obsidian is a bit of a pain in the ass. Most of the solutions I saw online were based on determining your location from your IP address which is, needless to say, wildly inaccurate.</description>
+    </item>
+  </channel>
+</rss>
