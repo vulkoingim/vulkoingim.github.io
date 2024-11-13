@@ -4,16 +4,14 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>yubikey/touch id sudo on osx - Aleksandar&#39;s Blog</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:title" content="yubikey/touch id sudo on osx" />
-<meta property="og:description" content="This is a bit expanded version of the gist, with some updated instructions to also accommodate TouchID and manual compilation of pam_yubico.
-Setup Dependencies brew install ykman pam_yubico Generate a new, random challenge-response secret in slot 2, require touch (-t) ykman otp chalresp 2 -g -t Create required directory w/ required permissions mkdir -m0755 -p ~/.yubico Generate the initial challenge from the Yubikey kpamcfg -2 Create the sudo_local file and edit it." />
+<meta property="og:description" content="Enabling both yubikey and touch id sudo on osx" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://vulkoingim.github.io/posts/yubi-touch-sudo/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-12-24T12:28:48+00:00" />
 <meta property="article:modified_time" content="2023-12-24T12:28:48+00:00" />
 
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="yubikey/touch id sudo on osx"/>
-<meta name="twitter:description" content="This is a bit expanded version of the gist, with some updated instructions to also accommodate TouchID and manual compilation of pam_yubico.
-Setup Dependencies brew install ykman pam_yubico Generate a new, random challenge-response secret in slot 2, require touch (-t) ykman otp chalresp 2 -g -t Create required directory w/ required permissions mkdir -m0755 -p ~/.yubico Generate the initial challenge from the Yubikey kpamcfg -2 Create the sudo_local file and edit it."/>
+<meta name="twitter:description" content="Enabling both yubikey and touch id sudo on osx"/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" media="screen" href="https://vulkoingim.github.io/css/normalize.css" />
