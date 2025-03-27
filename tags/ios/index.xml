@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ios on Aleksandar&#39;s Blog</title>
+    <title>Ios on Aleksandar&#39;s Blog</title>
     <link>https://vulkoingim.github.io/tags/ios/</link>
-    <description>Recent content in ios on Aleksandar&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Ios on Aleksandar&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 13 Nov 2024 14:01:52 +0000</lastBuildDate>
     <atom:link href="https://vulkoingim.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://vulkoingim.github.io/posts/obsidian-location/</link>
       <pubDate>Wed, 13 Nov 2024 14:01:52 +0000</pubDate>
       <guid>https://vulkoingim.github.io/posts/obsidian-location/</guid>
-      <description>Recently I started using Obsidian and journaling daily. It took no time for me to start tracking all kinds of things for each day, and naturally some of those things ended up being my location and the weather.&#xA;It turns out that getting your accurate location in Obsidian is a bit of a pain in the ass. Most of the solutions I saw online were based on determining your location from your IP address which is, needless to say, wildly inaccurate.</description>
+      <description>&lt;p&gt;Recently I started using Obsidian and journaling daily. It took no time for me to start tracking all kinds of things for each day, and naturally some of those things ended up being my location and the weather.&lt;/p&gt;&#xA;&lt;p&gt;It turns out that getting your accurate location in Obsidian is a bit of a pain in the ass. Most of the solutions I saw online were based on determining your location &lt;a href=&#34;https://forum.obsidian.md/t/mobile-can-obsidian-api-provide-current-geo-location-gps-on-android-ios/21638/8&#34;&gt;from your IP address&lt;/a&gt; which is, needless to say, wildly inaccurate. Others required you to &lt;a href=&#34;https://github.com/esm7/obsidian-map-view#gps-location-support&#34;&gt;run a separate (Android) app, or go through a web page&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Sourdough Buddy - Aleksandar&#39;s Blog</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:url" content="https://vulkoingim.github.io/posts/sourdough-buddy/">
+  <meta property="og:site_name" content="Aleksandar&#39;s Blog">
+  <meta property="og:title" content="Sourdough Buddy">
+  <meta property="og:description" content="Sourdough calculator">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-25T15:11:27+00:00">
+    <meta property="article:modified_time" content="2025-03-25T15:11:27+00:00">
+    <meta property="article:tag" content="Sourdough">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sourdough Buddy">
+  <meta name="twitter:description" content="Sourdough calculator">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://vulkoingim.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://vulkoingim.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://vulkoingim.github.io/css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="https://vulkoingim.github.io/css/dark.css" media="(prefers-color-scheme: dark)" />
+	<link rel="stylesheet" type="text/css" href="https://vulkoingim.github.io/css/custom-dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="https://vulkoingim.github.io/js/main.js"></script><script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_X14SwB4DKkD5SFmoeKvazuNv1XBDdwZBk5lhauRBmS2',{api_host:'https://eu.i.posthog.com', person_profiles: 'identified_only' 
+        })
+</script></head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	<base href="https://vulkoingim.github.io/">
+	<h1 class="site-title"><a href="https://vulkoingim.github.io/">Aleksandar&#39;s Blog</a></h1>
+	<div class="site-description"><h2>stuff and things</h2><nav class="nav social">
+			<ul class="flat"><a href="https://bsky.app/profile/vulko.ingim.io" title="BlueSky"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Bluesky</title><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg></a><a href="https://mastodon.social/@vulkoingim" title="Mastodon"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Mastodon</title><path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"/></svg></a><a href="https://github.com/vulkoingim" title="Github"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about/">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+	</div>
+
+	<div class="container wrapper post wide-content">
+		<div class="post-header">
+			<h1 class="title">Sourdough Buddy</h1>
+			<div class="meta">Posted at &mdash; Mar 25, 2025</div>
+		</div>
+
+		<div class="markdown">
+			<style>
+    .calc-container {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1;
+        color: #333;
+        width: 100%;
+        margin: 0 auto;
+        padding: 3px;
+        font-size: 1.2em;
+    }
+    
+    .calc-container h1 {
+        text-align: center;
+        color: #5a3921;
+        margin-bottom: 15px;
+        font-size: 1.8em;
+    }
+    
+    .calc-container .calc-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .calc-container .card {
+        background: #fff;
+        border-radius: 2px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        padding: 3px;
+        margin-bottom: 0;
+    }
+    
+    .calc-container .card h2 {
+        color: #5a3921;
+        margin: 0 0 10px 0;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #eee;
+        font-size: 1.2em;
+    }
+
+    .calc-container .card h3 {
+        color: #5a3921;
+        margin: 15px 0 8px 0;
+        font-size: 1.1em;
+    }
+    
+    .calc-container table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.7em;
+    }
+    
+    .calc-container td, .calc-container th {
+        padding: 1px 2px;
+        text-align: left;
+    }
+    
+    .calc-container tr:nth-child(even) {
+        background-color: #f9f5f0;
+    }
+    
+    .calc-container input {
+        width: 40px;
+        padding: 1px;
+        border: 1px solid #ddd;
+        border-radius: 1px;
+        font-size: 0.7em;
+    }
+    
+    .calc-container input[type="text"] {
+        width: 90%;
+        font-size: 0.7em;
+    }
+    
+    .calc-container input:focus {
+        border-color: #8b6b4a;
+        outline: none;
+    }
+    
+    .calc-container .total-row {
+        font-weight: bold;
+        border-top: 1px solid #ddd;
+    }
+    
+    .calc-container .note {
+        font-size: 0.8em;
+        color: #666;
+        font-style: italic;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    @media (max-width: 768px) {
+        .calc-container .calc-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .calc-container {
+            padding: 10px;
+        }
+        
+        .calc-container .card {
+            padding: 10px;
+        }
+        
+        .calc-container table {
+            font-size: 0.85em;
+        }
+        
+        .calc-container td, .calc-container th {
+            padding: 3px 4px;
+        }
+        
+        .calc-container input {
+            width: 50px;
+            padding: 3px;
+        }
+    }
+</style>
+
+<div class="calc-container">    
+    <div class="calc-grid">
+        <div class="card">
+            <h2>Base Formula</h2>
+            <table>
+                <tr>
+                    <td>Dough weight (g)</td>
+                    <td><input type="number" id="doughWeight" value="610" onchange="calculateAll()"></td>
+                </tr>
+                <tr>
+                    <td>Levain (%)</td>
+                    <td><input type="number" id="levainPercent" value="20" onchange="calculateAll()"></td>
+                </tr>
+                <tr>
+                    <td>Scale</td>
+                    <td><input type="number" id="scale" value="1" step="1" onchange="calculateAll()"></td>
+                </tr>
+                <tr>
+                    <td>Pre-fermented flour (g)</td>
+                    <td id="pff">37</td>
+                </tr>
+                <tr>
+                    <td>PFF (%)</td>
+                    <td id="pffPercent">10%</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>Total Ingredients</h2>
+            <table>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Baker's %</th>
+                    <th style="display: none;">Weight (g)</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="strongFlourName" value="Strong white flour" onchange="updateNames()"></td>
+                    <td><input type="number" id="strongFlourPercent" value="100" onchange="calculateAll()">%</td>
+                    <td id="totalStrongFlour" style="display: none;">365</td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="plainFlourName" value="Plain flour" onchange="updateNames()"></td>
+                    <td><input type="number" id="plainFlourPercent" value="0" onchange="calculateAll()">%</td>
+                    <td id="totalPlainFlour" style="display: none;">0</td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="flour3Name" value="Flour 3" onchange="updateNames()"></td>
+                    <td><input type="number" id="flour3Percent" value="0" onchange="calculateAll()">%</td>
+                    <td id="totalFlour3" style="display: none;">0</td>
+                </tr>
+                <tr>
+                    <td>Water</td>
+                    <td><input type="number" id="waterPercent" value="65" onchange="calculateAll()">%</td>
+                    <td id="totalWater" style="display: none;">237</td>
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td><input type="number" id="saltPercent" value="2.0" step="0.1" onchange="calculateAll()">%</td>
+                    <td id="totalSalt" style="display: none;">7</td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="inclusion1Name" value="Inclusion 1" onchange="updateNames()"></td>
+                    <td><input type="number" id="inclusion1Percent" value="0" onchange="calculateAll()">%</td>
+                    <td id="totalInclusion1" style="display: none;">0</td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="inclusion2Name" value="Inclusion 2" onchange="updateNames()"></td>
+                    <td><input type="number" id="inclusion2Percent" value="0" onchange="calculateAll()">%</td>
+                    <td id="totalInclusion2" style="display: none;">0</td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="inclusion3Name" value="Inclusion 3" onchange="updateNames()"></td>
+                    <td><input type="number" id="inclusion3Percent" value="0" onchange="calculateAll()">%</td>
+                    <td id="totalInclusion3" style="display: none;">0</td>
+                </tr>
+                <tr class="total-row" style="display: none;">
+                    <td>Total weight</td>
+                    <td id="totalPercent">167%</td>
+                    <td id="totalWeight" style="display: none;">610</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>Ferments</h2>
+            
+            <h3>Ripe Starter</h3>
+            <table>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Baker's %</th>
+                    <th>Weight (g)</th>
+                </tr>
+                <tr>
+                    <td>Flour</td>
+                    <td>100%</td>
+                    <td id="starterFlour">12</td>
+                </tr>
+                <tr>
+                    <td>Water</td>
+                    <td><input type="number" id="starterWaterPercent" value="100" onchange="calculateAll()">%</td>
+                    <td id="starterWater">12</td>
+                </tr>
+                <tr class="total-row">
+                    <td>Total weight</td>
+                    <td id="starterTotalPercent">200%</td>
+                    <td id="starterTotalWeight">24</td>
+                </tr>
+            </table>
+            
+            <h3>Levain Build</h3>
+            <table>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Baker's %</th>
+                    <th>Weight (g)</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="levainFlourName" value="Whole rye flour" onchange="updateNames()"></td>
+                    <td><input type="number" id="levainFlourPercent" value="350" onchange="calculateAll()">%</td>
+                    <td id="levainFlour">24</td>
+                </tr>
+                <tr>
+                    <td>Water</td>
+                    <td><input type="number" id="levainWaterPercent" value="350" onchange="calculateAll()">%</td>
+                    <td id="levainWater">24</td>
+                </tr>
+                <tr>
+                    <td>Ripe starter</td>
+                    <td><input type="number" id="ripeStarterPercent" value="100" onchange="calculateAll()">%</td>
+                    <td id="levainStarter">24</td>
+                </tr>
+                <tr class="total-row">
+                    <td>Total weight</td>
+                    <td id="levainTotalPercent">300%</td>
+                    <td id="levainTotalWeight">73</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>Main Dough Recipe</h2>
+            <table>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Weight (g)</th>
+                </tr>
+                <tr>
+                    <td id="mainStrongFlourName">Strong white flour</td>
+                    <td id="mainStrongFlour">329</td>
+                </tr>
+                <tr>
+                    <td id="mainPlainFlourName">Plain flour</td>
+                    <td id="mainPlainFlour">0</td>
+                </tr>
+                <tr>
+                    <td id="mainFlour3Name">Flour 3</td>
+                    <td id="mainFlour3">0</td>
+                </tr>
+                <tr>
+                    <td>Water</td>
+                    <td id="mainWater">201</td>
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td id="mainSalt">7</td>
+                </tr>
+                <tr>
+                    <td>Levain</td>
+                    <td id="mainLevain">73</td>
+                </tr>
+                <tr>
+                    <td id="mainInclusion1Name">Inclusion 1</td>
+                    <td id="mainInclusion1">0</td>
+                </tr>
+                <tr>
+                    <td id="mainInclusion2Name">Inclusion 2</td>
+                    <td id="mainInclusion2">0</td>
+                </tr>
+                <tr>
+                    <td id="mainInclusion3Name">Inclusion 3</td>
+                    <td id="mainInclusion3">0</td>
+                </tr>
+                <tr class="total-row">
+                    <td>Total weight</td>
+                    <td id="mainTotalWeight">610</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <p class="note">Note: Modify any value with an input field to recalculate the recipe.</p>
+    
+    <script>
+        function roundTo(num, decimals = 0) {
+            return Math.round(num * Math.pow(10, decimals)) / Math.pow(10, decimals);
+        }
+        
+        function updateNames() {
+            
+            const strongFlourName = document.getElementById('strongFlourName').value;
+            const plainFlourName = document.getElementById('plainFlourName').value;
+            const flour3Name = document.getElementById('flour3Name').value;
+            const inclusion1Name = document.getElementById('inclusion1Name').value;
+            const inclusion2Name = document.getElementById('inclusion2Name').value;
+            const inclusion3Name = document.getElementById('inclusion3Name').value;
+            
+            
+            
+            
+            
+            document.getElementById('mainStrongFlourName').textContent = strongFlourName;
+            document.getElementById('mainPlainFlourName').textContent = plainFlourName;
+            document.getElementById('mainFlour3Name').textContent = flour3Name;
+            document.getElementById('mainInclusion1Name').textContent = inclusion1Name;
+            document.getElementById('mainInclusion2Name').textContent = inclusion2Name;
+            document.getElementById('mainInclusion3Name').textContent = inclusion3Name;
+        }
+        
+        function calculateAll() {
+            
+            const doughWeight = parseFloat(document.getElementById('doughWeight').value);
+            const levainPercent = parseFloat(document.getElementById('levainPercent').value) / 100;
+            const scale = parseFloat(document.getElementById('scale').value);
+            
+            
+            const strongFlourPercent = parseFloat(document.getElementById('strongFlourPercent').value) / 100;
+            const plainFlourPercent = parseFloat(document.getElementById('plainFlourPercent').value) / 100;
+            const flour3Percent = parseFloat(document.getElementById('flour3Percent').value) / 100;
+            
+            
+            const waterPercent = parseFloat(document.getElementById('waterPercent').value) / 100;
+            const saltPercent = parseFloat(document.getElementById('saltPercent').value) / 100;
+            const inclusion1Percent = parseFloat(document.getElementById('inclusion1Percent').value) / 100;
+            const inclusion2Percent = parseFloat(document.getElementById('inclusion2Percent').value) / 100;
+            const inclusion3Percent = parseFloat(document.getElementById('inclusion3Percent').value) / 100;
+            
+            
+            const starterWaterPercent = parseFloat(document.getElementById('starterWaterPercent').value) / 100;
+            const levainWaterPercent = parseFloat(document.getElementById('levainWaterPercent').value) / 100;
+            const ripeStarterPercent = parseFloat(document.getElementById('ripeStarterPercent').value) / 100;
+            
+            const levainFlourPercent = parseFloat(document.getElementById('levainFlourPercent').value) / 100;
+            
+            
+            const totalBakersPercent = 1 + waterPercent + saltPercent + inclusion1Percent + inclusion2Percent + inclusion3Percent;
+            
+            
+            const totalFlourWeight = (doughWeight / totalBakersPercent) * scale;
+            
+            
+            
+            let totalStrongFlour, totalPlainFlour, totalFlour3;
+            
+            
+            if (strongFlourPercent === 0 && plainFlourPercent === 0 && flour3Percent === 0) {
+                totalStrongFlour = totalFlourWeight;
+                totalPlainFlour = 0;
+                totalFlour3 = 0;
+            } else {
+                
+                
+                const totalParts = strongFlourPercent + plainFlourPercent + flour3Percent;
+                
+                
+                totalStrongFlour = totalFlourWeight * (strongFlourPercent / totalParts);
+                totalPlainFlour = totalFlourWeight * (plainFlourPercent / totalParts);
+                totalFlour3 = totalFlourWeight * (flour3Percent / totalParts);
+            }
+            
+            
+            const totalWater = totalFlourWeight * waterPercent;
+            const totalSalt = totalFlourWeight * saltPercent;
+            const totalInclusion1 = totalFlourWeight * inclusion1Percent;
+            const totalInclusion2 = totalFlourWeight * inclusion2Percent;
+            const totalInclusion3 = totalFlourWeight * inclusion3Percent;
+            
+            
+            const levainWeight = totalFlourWeight * levainPercent;
+            
+            
+            const levainTotalPercent = levainFlourPercent + levainWaterPercent + ripeStarterPercent;
+            const levainFlour = levainWeight / levainTotalPercent * levainFlourPercent;
+            const levainWater = levainWeight / levainTotalPercent * levainWaterPercent;
+            const levainStarter = levainWeight / levainTotalPercent * ripeStarterPercent;
+            
+            
+            const starterTotalPercent = 1 + starterWaterPercent;
+            const starterFlour = levainStarter / starterTotalPercent;
+            const starterWater = starterFlour * starterWaterPercent;
+            
+            
+            const pff = levainFlour + starterFlour;
+            const pffPercent = (pff / totalFlourWeight) * 100;
+            
+            
+            const mainStrongFlour = totalStrongFlour;
+            const mainPlainFlour = totalPlainFlour;
+            const mainFlour3 = totalFlour3;
+            const mainWater = totalWater - levainWater - starterWater;
+            const mainSalt = totalSalt;
+            const mainLevain = levainWeight;
+            const mainInclusion1 = totalInclusion1;
+            const mainInclusion2 = totalInclusion2;
+            const mainInclusion3 = totalInclusion3;
+            
+            
+            const targetTotalWeight = doughWeight * scale;
+            const currentTotal = mainStrongFlour + mainPlainFlour + mainFlour3 + mainWater + 
+                               mainSalt + mainLevain + mainInclusion1 + mainInclusion2 + mainInclusion3;
+            
+            
+            const adjustment = currentTotal - targetTotalWeight;
+            
+            
+            let mainStrongFlourAdjusted, mainPlainFlourAdjusted, mainFlour3Adjusted;
+            
+            
+            const mainTotalFlour = mainStrongFlour + mainPlainFlour + mainFlour3;
+            
+            
+            if (mainTotalFlour === 0) {
+                mainStrongFlourAdjusted = mainStrongFlour;
+                mainPlainFlourAdjusted = mainPlainFlour;
+                mainFlour3Adjusted = mainFlour3;
+            } else {
+                
+                mainStrongFlourAdjusted = Math.max(0, mainStrongFlour - (adjustment * (mainStrongFlour / mainTotalFlour)));
+                mainPlainFlourAdjusted = Math.max(0, mainPlainFlour - (adjustment * (mainPlainFlour / mainTotalFlour)));
+                mainFlour3Adjusted = Math.max(0, mainFlour3 - (adjustment * (mainFlour3 / mainTotalFlour)));
+            }
+            
+            
+            const mainTotalWeight = mainStrongFlourAdjusted + mainPlainFlourAdjusted + mainFlour3Adjusted + mainWater + 
+                                mainSalt + mainLevain + mainInclusion1 + mainInclusion2 + mainInclusion3;
+            
+            
+            document.getElementById('pff').textContent = roundTo(pff);
+            document.getElementById('pffPercent').textContent = roundTo(pffPercent, 1) + '%';
+            
+            document.getElementById('totalStrongFlour').textContent = roundTo(totalStrongFlour);
+            document.getElementById('totalPlainFlour').textContent = roundTo(totalPlainFlour);
+            document.getElementById('totalFlour3').textContent = roundTo(totalFlour3);
+            document.getElementById('totalWater').textContent = roundTo(totalWater);
+            document.getElementById('totalSalt').textContent = roundTo(totalSalt);
+            document.getElementById('totalInclusion1').textContent = roundTo(totalInclusion1);
+            document.getElementById('totalInclusion2').textContent = roundTo(totalInclusion2);
+            document.getElementById('totalInclusion3').textContent = roundTo(totalInclusion3);
+            document.getElementById('totalWeight').textContent = roundTo(doughWeight);
+            document.getElementById('totalPercent').textContent = roundTo(totalBakersPercent * 100) + '%';
+            
+            document.getElementById('starterFlour').textContent = roundTo(starterFlour);
+            document.getElementById('starterWater').textContent = roundTo(starterWater);
+            document.getElementById('starterTotalWeight').textContent = roundTo(starterFlour + starterWater);
+            document.getElementById('starterTotalPercent').textContent = roundTo(starterTotalPercent * 100) + '%';
+            
+            document.getElementById('levainFlour').textContent = roundTo(levainFlour);
+            document.getElementById('levainWater').textContent = roundTo(levainWater);
+            document.getElementById('levainStarter').textContent = roundTo(levainStarter);
+            document.getElementById('levainTotalWeight').textContent = roundTo(levainFlour + levainWater + levainStarter);
+            document.getElementById('levainTotalPercent').textContent = roundTo(levainTotalPercent * 100) + '%';
+            
+            document.getElementById('mainStrongFlour').textContent = roundTo(mainStrongFlourAdjusted);
+            document.getElementById('mainPlainFlour').textContent = roundTo(mainPlainFlourAdjusted);
+            document.getElementById('mainFlour3').textContent = roundTo(mainFlour3Adjusted);
+            document.getElementById('mainWater').textContent = roundTo(mainWater);
+            document.getElementById('mainSalt').textContent = roundTo(mainSalt);
+            document.getElementById('mainLevain').textContent = roundTo(mainLevain);
+            document.getElementById('mainInclusion1').textContent = roundTo(mainInclusion1);
+            document.getElementById('mainInclusion2').textContent = roundTo(mainInclusion2);
+            document.getElementById('mainInclusion3').textContent = roundTo(mainInclusion3);
+            document.getElementById('mainTotalWeight').textContent = roundTo(mainTotalWeight);
+            
+            
+            updateNames();
+        }
+        
+        
+        calculateAll();
+    </script>
+</div>
+<h2 id="how-to-use-this-calculator">How to Use This Calculator</h2>
+<ol>
+<li>Adjust the dough weight, levain percentage, and hydration as needed</li>
+<li>The calculator will automatically update all calculations</li>
+<li>The &ldquo;Main Dough Recipe&rdquo; shows exactly what you need to mix</li>
+</ol>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="/tags/sourdough">sourdough</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div>
+<script src="https://giscus.app/client.js"
+    data-repo="vulkoingim/vulkoingim.github.io"
+    data-repo-id="MDEwOlJlcG9zaXRvcnkxODY4OTYyNjI="
+    data-category="Comments"
+    data-category-id="DIC_kwDOF0qQZc4CQZQZ"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
+</script>
+ </div>
+
+	<div class="container wrapper">
+		<div class="footer wrapper">
+	<nav class="nav">
+		<div> <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div><script>feather.replace()</script>
+	</div>
+</body>
+</html>

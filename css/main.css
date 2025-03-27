@@ -205,6 +205,44 @@ pre code {
     margin-top: 50px;
 }
 
+/* Add styles for wider content */
+.container.wide-content {
+    max-width: 1200px;
+}
+
+.container.wide-content .wrapper {
+    max-width: 1200px;
+}
+
+/* Ensure header and footer stay at original width */
+.container:first-child,
+.container:last-child {
+    max-width: 800px;
+}
+
+.container:first-child .wrapper,
+.container:last-child .wrapper {
+    max-width: 760px;
+}
+
+/* Ensure post header is properly positioned */
+.post-header {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.post-header .title {
+    margin: 0;
+    font-size: 2.75rem;
+}
+
+.post-header .meta {
+    padding-left: 5px;
+    margin-top: 10px;
+    font-size: 0.725rem;
+    color: #999;
+}
+
 .header {
     margin-bottom: 20px;
     padding-bottom: 20px;

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>obsidian on Aleksandar&#39;s Blog</title>
+    <title>Obsidian on Aleksandar&#39;s Blog</title>
     <link>https://vulkoingim.github.io/tags/obsidian/</link>
-    <description>Recent content in obsidian on Aleksandar&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Obsidian on Aleksandar&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 13 Nov 2024 14:01:52 +0000</lastBuildDate>
     <atom:link href="https://vulkoingim.github.io/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,14 @@
       <link>https://vulkoingim.github.io/posts/obsidian-location/</link>
       <pubDate>Wed, 13 Nov 2024 14:01:52 +0000</pubDate>
       <guid>https://vulkoingim.github.io/posts/obsidian-location/</guid>
-      <description>Recently I started using Obsidian and journaling daily. It took no time for me to start tracking all kinds of things for each day, and naturally some of those things ended up being my location and the weather.&#xA;It turns out that getting your accurate location in Obsidian is a bit of a pain in the ass. Most of the solutions I saw online were based on determining your location from your IP address which is, needless to say, wildly inaccurate.</description>
+      <description>&lt;p&gt;Recently I started using Obsidian and journaling daily. It took no time for me to start tracking all kinds of things for each day, and naturally some of those things ended up being my location and the weather.&lt;/p&gt;&#xA;&lt;p&gt;It turns out that getting your accurate location in Obsidian is a bit of a pain in the ass. Most of the solutions I saw online were based on determining your location &lt;a href=&#34;https://forum.obsidian.md/t/mobile-can-obsidian-api-provide-current-geo-location-gps-on-android-ios/21638/8&#34;&gt;from your IP address&lt;/a&gt; which is, needless to say, wildly inaccurate. Others required you to &lt;a href=&#34;https://github.com/esm7/obsidian-map-view#gps-location-support&#34;&gt;run a separate (Android) app, or go through a web page&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Obsidian Read It Later</title>
       <link>https://vulkoingim.github.io/posts/obsidian-read-it-later/</link>
       <pubDate>Tue, 12 Nov 2024 17:11:27 +0000</pubDate>
       <guid>https://vulkoingim.github.io/posts/obsidian-read-it-later/</guid>
-      <description>I&amp;rsquo;ve always been hoarding hundreds of tabs in my browser, thinking that I&amp;rsquo;ll eventually get back to that article and read it at some point in the future. At some point I discovered read-it-later apps - like Pocket and started hoarding things there instead as well. For some unknown reason I&amp;rsquo;ve always aspired to read those things I&amp;rsquo;ve saved at some later date&amp;hellip;&#xA;It very rarely happened.&#xA;Some time passed and I decided that I&amp;rsquo;ll cut my losses and start fresh, and I started using Omnivore - with mixed results.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve always been hoarding hundreds of tabs in my browser, thinking that I&amp;rsquo;ll eventually get back to that article and read it at some point in the future. At some point I discovered read-it-later apps - like &lt;code&gt;Pocket&lt;/code&gt; and started hoarding things there &lt;del&gt;instead&lt;/del&gt; as well. For some unknown reason I&amp;rsquo;ve always aspired to read those things I&amp;rsquo;ve saved at some later date&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;It very rarely happened.&lt;/p&gt;&#xA;&lt;p&gt;Some time passed and I decided that I&amp;rsquo;ll cut my losses and start fresh, and I started using &lt;code&gt;Omnivore&lt;/code&gt; - with mixed results. Well, recently it was announced it was &lt;a href=&#34;https://blog.omnivore.app/p/details-on-omnivore-shutting-down&#34;&gt;shutting down&lt;/a&gt;, so my initial reaction was to look for yet another alternative. Surprise surprise.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
