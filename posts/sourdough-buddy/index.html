@@ -214,12 +214,12 @@
                     <td><input type="number" id="scale" value="1" step="1" onchange="calculateAll()"></td>
                 </tr>
                 <tr>
-                    <td>Pre-fermented flour (g)</td>
-                    <td id="pff">37</td>
+                    <td style="display: none;">Pre-fermented flour (g)</td>
+                    <td id="pff" style="display: none;">37</td>
                 </tr>
                 <tr>
-                    <td>PFF (%)</td>
-                    <td id="pffPercent">10%</td>
+                    <td style="display: none;">PFF (%)</td>
+                    <td id="pffPercent" style="display: none;">10%</td>
                 </tr>
             </table>
         </div>
@@ -302,7 +302,8 @@
                 </tr>
                 <tr class="total-row">
                     <td>Total weight</td>
-                    <td id="starterTotalPercent">200%</td>
+                    <td id="starterTotalPercent" style="display: none;">200%</td>
+                    <td></td>
                     <td id="starterTotalWeight">24</td>
                 </tr>
             </table>
@@ -331,7 +332,8 @@
                 </tr>
                 <tr class="total-row">
                     <td>Total weight</td>
-                    <td id="levainTotalPercent">300%</td>
+                    <td id="levainTotalPercent" style="display: none;">300%</td>
+                    <td></td>
                     <td id="levainTotalWeight">73</td>
                 </tr>
             </table>
@@ -550,13 +552,13 @@
             
             document.getElementById('starterFlour').textContent = roundTo(starterFlour);
             document.getElementById('starterWater').textContent = roundTo(starterWater);
-            document.getElementById('starterTotalWeight').textContent = roundTo(starterFlour + starterWater);
+            document.getElementById('starterTotalWeight').textContent = roundTo(starterFlour) + roundTo(starterWater);
             document.getElementById('starterTotalPercent').textContent = roundTo(starterTotalPercent * 100) + '%';
             
             document.getElementById('levainFlour').textContent = roundTo(levainFlour);
             document.getElementById('levainWater').textContent = roundTo(levainWater);
             document.getElementById('levainStarter').textContent = roundTo(levainStarter);
-            document.getElementById('levainTotalWeight').textContent = roundTo(levainFlour + levainWater + levainStarter);
+            document.getElementById('levainTotalWeight').textContent = roundTo(levainFlour) + roundTo(levainWater) + roundTo(levainStarter);
             document.getElementById('levainTotalPercent').textContent = roundTo(levainTotalPercent * 100) + '%';
             
             document.getElementById('mainStrongFlour').textContent = roundTo(mainStrongFlourAdjusted);
