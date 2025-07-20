@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Riff Radar is Live - Aleksandar&#39;s Blog</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:url" content="https://vulkoingim.github.io/posts/riffradar-is-live/">
+  <meta property="og:site_name" content="Aleksandar&#39;s Blog">
+  <meta property="og:title" content="Riff Radar is Live">
+  <meta property="og:description" content="My little Spotify recommendation engine is finally live!">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-07-20T17:01:52+00:00">
+    <meta property="article:modified_time" content="2025-07-20T17:01:52+00:00">
+    <meta property="article:tag" content="Spotify">
+    <meta property="article:tag" content="Riffradar">
+    <meta property="article:tag" content="Blog ">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Riff Radar is Live">
+  <meta name="twitter:description" content="My little Spotify recommendation engine is finally live!">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://vulkoingim.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://vulkoingim.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://vulkoingim.github.io/css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="https://vulkoingim.github.io/css/dark.css" media="(prefers-color-scheme: dark)" />
+	<link rel="stylesheet" type="text/css" href="https://vulkoingim.github.io/css/custom-dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="https://vulkoingim.github.io/js/main.js"></script><script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_X14SwB4DKkD5SFmoeKvazuNv1XBDdwZBk5lhauRBmS2',{api_host:'https://eu.i.posthog.com', person_profiles: 'identified_only' 
+        })
+</script></head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	<base href="https://vulkoingim.github.io/">
+	<h1 class="site-title"><a href="https://vulkoingim.github.io/">Aleksandar&#39;s Blog</a></h1>
+	<div class="site-description"><h2>stuff and things</h2><nav class="nav social">
+			<ul class="flat"><a href="https://bsky.app/profile/vulko.ingim.io" title="BlueSky"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Bluesky</title><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg></a><a href="https://mastodon.social/@vulkoingim" title="Mastodon"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Mastodon</title><path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"/></svg></a><a href="https://github.com/vulkoingim" title="Github"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about/">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+	</div>
+
+	<div class="container wrapper post ">
+		<div class="post-header">
+			<h1 class="title">Riff Radar is Live</h1>
+			<div class="meta">Posted at &mdash; Jul 20, 2025</div>
+		</div>
+
+		<div class="markdown">
+			<blockquote>
+<p>note: this blog post is going to live here for now, until I set-up the <a href="https://riffradar.org">riffradar.org</a> blog properly</p></blockquote>
+<p>You follow hundreds (or thousands) of artists on Spotify, but somehow you always end up listening to the same songs over and over again? You know there&rsquo;s amazing music buried in your follows, but it never gets surfaced. That band you discovered somewhere, followed, then completely forgot existed?</p>
+<p>That&rsquo;s exactly where I was, and that&rsquo;s why I built Riff Radar.</p>
+<h2 id="the-problem">The Problem</h2>
+<p>I listen to music constantly, and I&rsquo;ve been a Spotify user for many years now. Usually I would put on a playlist and any bands that I like - I would follow.</p>
+<p>Naturally my library has kept growing and growing, but with the more music and bands that I kept discovering, I felt that I would rarely go and play single bands from my library. Sound familiar?</p>
+<p>At some point Spotify created the Discover Weekly playlist, which has been a hit and miss at best. Once every few months it would actually contain some good stuff, and then would deteriorate completely with barely anything that I listen to or resembles my interests. Even after hiding, liking songs as would be the recommended way to curate the list, it seemed to never give me any decent recommendations.</p>
+<p>Later they introduced the Daily Mixes; it sounded great on paper - mixes organised by your listening habits, with similar bands in each playlist. I happily played them for a while. But unfortunately, I ended up having the same songs from the same artists all the time. The algorithm kept serving me the same 5 songs from each artist I already knew I liked.</p>
+<h2 id="the-solution">The Solution</h2>
+<p>And this is where this whole project comes into play. Riff Radar digs deep into your Spotify library and creates playlists that actually introduce you to new songs from artists you already follow. No more playing the same 3 hits from your favorite bands - it finds the deep cuts, the B-sides, the tracks you&rsquo;ve never heard before.</p>
+<p>It&rsquo;s an attempt to get you to listen to more of the artists you actually follow, to listen to more new songs, instead of playing the same ones on repeat. And dare I say (I&rsquo;m biased), it does it quite well for my personal library. So much so that the playlists generated by Riff Radar are my top sources of listening on Spotify (wink wink, you can find out yours as well on the Music Statistics page).</p>
+<h2 id="how-it-works">How it works?</h2>
+<p>Genres are at the heart of Riff Radar - we index your music library, categorise your artists by genres, and give you the ability to create playlists with advanced filters. You can preview which artists match your criteria before generating playlists, giving you full control over your musical exploration.</p>
+<p>We process thousands of artists and millions of tracks to build these personalized recommendations.</p>
+<h2 id="do-i-need-to-follow-artists-for-riff-radar-to-work">Do I need to follow artists for Riff Radar to work?</h2>
+<p>Riff Radar works best if you have a large library of artists you follow. But we also offer an additional feature, which scans the artists from all of your followed playlists, and will match on those playlist. It is opt in, and it may take a bit of time until all your playlists are processed. The upside is that it can greatly expand the the available pool of artists available.</p>
+<h2 id="how-it-started">How It Started</h2>
+<p>Initially it just started as a local thing, just for my use. Afterwards I spoke with some friends that had the same troubles with their Spotify recommendations and I decided to put it online.</p>
+<h2 id="whats-next">What&rsquo;s Next</h2>
+<p>I hope you find the project as useful as I do. I have so many more ideas on how to make it better, and more is coming very soon. More posts are also coming on how to make the best out of it.</p>
+<p><strong>Try it out:</strong> <a href="https://riffradar.org">riffradar.org</a></p>
+<p><strong>Give feedback:</strong> I&rsquo;d love to hear what you think of Riff Radar, any suggestions, or just say hi. Give us a shout at <a href="https://bsky.app/profile/riffradar.org">@riffradar.org</a> or at <a href="mailto:info@riffradar.org">info@riffradar.org</a>.</p>
+<p>You can also always find me at <a href="https://bsky.app/profile/vulko.ingim.io">@vulko.ingim.io</a> or give me a follow on <a href="https://open.spotify.com/user/aaleksandrov">Spotify</a>.</p>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="/tags/spotify">spotify</a></li>
+								
+								<li><a href="/tags/riffradar">riffradar</a></li>
+								
+								<li><a href="/tags/blog">blog </a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div>
+<script src="https://giscus.app/client.js"
+    data-repo="vulkoingim/vulkoingim.github.io"
+    data-repo-id="MDEwOlJlcG9zaXRvcnkxODY4OTYyNjI="
+    data-category="Comments"
+    data-category-id="DIC_kwDOF0qQZc4CQZQZ"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
+</script>
+ </div>
+
+	<div class="container wrapper">
+		<div class="footer wrapper">
+	<nav class="nav">
+		<div> <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div><script>feather.replace()</script>
+	</div>
+</body>
+</html>
