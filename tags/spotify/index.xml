@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Spotify on Aleksandar&#39;s Blog</title>
-    <link>http://localhost:1313/tags/spotify/</link>
+    <link>https://vulkoingim.github.io/tags/spotify/</link>
     <description>Recent content in Spotify on Aleksandar&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Jul 2025 17:01:52 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/spotify/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Jul 2025 17:01:52 +0000</lastBuildDate>
+    <atom:link href="https://vulkoingim.github.io/tags/spotify/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Riff Radar is Live</title>
-      <link>http://localhost:1313/posts/riffradar-is-live/</link>
-      <pubDate>Sun, 20 Jul 2025 17:01:52 +0000</pubDate>
-      <guid>http://localhost:1313/posts/riffradar-is-live/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;note: this blog post is going to live here for now, until I set-up the &lt;a href=&#34;http://127.0.0.1:3000/&#34;&gt;riffradar.org&lt;/a&gt; blog properly&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;You follow hundreds (or thousands) of artists on Spotify, but somehow you always end up listening to the same songs over and over again? You know there&amp;rsquo;s amazing music buried in your follows, but it never gets surfaced. That band you discovered somewhere, followed, then completely forgot existed?&lt;/p&gt;&#xA;&lt;p&gt;That&amp;rsquo;s exactly where I was, and that&amp;rsquo;s why I built Riff Radar.&lt;/p&gt;</description>
+      <link>https://vulkoingim.github.io/posts/riffradar-is-live/</link>
+      <pubDate>Mon, 21 Jul 2025 17:01:52 +0000</pubDate>
+      <guid>https://vulkoingim.github.io/posts/riffradar-is-live/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;note: this blog post is going to live here for now, until I set-up the &lt;a href=&#34;https://riffradar.org&#34;&gt;riffradar.org&lt;/a&gt; blog properly&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;You follow hundreds (or thousands) of artists on Spotify, but somehow you always end up listening to the same songs over and over again? You know there&amp;rsquo;s amazing music buried in your follows, but it never gets surfaced. That band you discovered somewhere, followed, then completely forgot existed?&lt;/p&gt;&#xA;&lt;p&gt;That&amp;rsquo;s exactly where I was, and that&amp;rsquo;s why I built Riff Radar.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
